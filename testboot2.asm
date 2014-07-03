@@ -4,11 +4,11 @@ org 0x7c00 ; BIOS boot origin
 jmp main ;Jump to start main() entry-point 
 
 ;;;;;;;;;;;;;;
-; Variables 
+; Variables  ;
 ;;;;;;;;;;;;;;
 
-Message db "Hello World, booting from low-level 16-bit...", 0x0 
-MessageB db "Fisnik's own bootloader program written in x86 assembly language.", 0x0
+Message db "Hello, World!", 0x0 
+MessageB db "This boot loader is written in x86. More stuff will be added (hopefully).", 0x0
 AnyKey db "Press any key to reboot...", 0x0 
 
 ;Print characters to the screen 
